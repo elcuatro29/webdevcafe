@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Redressed&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+</head>
+<body background="images/granocafe.jpg">
+  <nav class="menu">  
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>     
+    </label>
+    <label class="logo">Cafe Del Bueno</label> 
+    
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></il>
+      <li><a href=""><i class="fas fa-users"></i>Nosotros</a></il>
+      <li><a href=""><i class="fas fa-coffee"></i>Productos</a></il>
+      <li><a class="active" href="contacto.html"><i class="fas fa-envelope"></i>Contacto</a></il>
+    </ul>
+  </nav>
+
+  <div class="contacto">
+    <h1 class="ch1">Contacta con Nosotros</h1>
+  </div>
+  
+  <div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">Nombre</label>
+      <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+  
+      <label for="lname">Apellido</label>
+      <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+  
+      <label for="email">Correo Electronico</label>
+      <input type="text" id="email" name="email" placeholder="Tu correo electronico..">
+  
+      <label for="subject">Mensaje</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+  
+</body>
+</html>

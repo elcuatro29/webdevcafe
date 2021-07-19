@@ -1,0 +1,317 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  /* box-sizing: border-box; */
+}
+
+body {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+}
+
+a.active,a:hover {
+  background:#DFD6A7;
+  transition: .5s;
+}
+
+h1 {
+  color: black;
+  font-family: 'Redressed', cursive;
+  font-size: 3rem;
+  margin: 0px;
+}
+
+/* h2 {
+  color: black;
+  
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5rem;
+  /* margin: 100px 0px 50px;  
+} */
+
+
+
+p {
+  color: black;
+  font-size: 2rem;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* <!-------------------------------- CLASES -----------------------------------> */
+
+.btn {
+  
+  background: #F7CE5B;
+  border-radius: 0px;
+  font-family: 'Quicksand', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 1px;
+  text-decoration: none;
+  margin: 0;
+  
+}
+
+.btn:hover {
+  background: #3cb0fd;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.ch1 {
+  color: white;
+}
+
+.contacto {
+  text-align: center;
+  margin-top: 50px;
+  height: 200px;
+}
+
+#check {
+  display: none;
+}
+
+.logo {
+  color: #DFD6A7;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-family: 'Redressed', cursive;
+  margin: 0rem 6rem 0rem 1rem;
+}
+
+.fa-users {
+  margin: 0px 12px 0px 0px;
+}
+
+.fa-home {
+  margin: 0px 12px 0px 0px;
+}
+
+.fa-coffee {
+  margin: 0px 12px 0px 0px;
+}
+
+.fa-envelope {
+  margin: 0px 12px 0px 0px;
+}
+
+.form {
+  align-items: center;
+}
+
+.menu {
+  
+  background-color: #1F1300;
+  position: sticky;
+  z-index: 999;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  
+}
+
+.p1 {
+  margin: 50px 0px 0px;
+}
+
+.p2 {
+  margin: 0px 0px 25px;
+}
+
+.primer-contenedor {
+  width: 100%;
+  position: relative;
+  padding: 0px 0px 600px;
+  margin: 0px;
+}
+
+.segundo-contenedor {
+  display: grid;
+  /* position: relative; */
+  width: 100%;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+}
+
+.team {
+  color:white;
+}
+
+.tercer-contenedor {
+  
+  width: 100%;
+  height: 700px;
+}
+
+.navbar {
+  color:white;
+  /* font-size: 1.45rem; */
+  font-family: 'Quicksand', sans-serif;
+  /* margin: 0rem 3.2rem 0rem 0rem; */
+}
+
+.slogan {  
+  background-color: #DFD6A7;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  margin-right: 50px;
+  width: 300px;
+  border: 15px solid #F7CE5B;
+}
+
+.d1 img {
+  /* position: absolute; */
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.d2 img {
+  /* position: absolute; */
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 33%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.d3 {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #AF9B46;
+  /* position: absolute; */
+  width: 100%;
+  height: 500px;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+.d3 h2 {
+  color: black;  
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5rem;
+  margin: 100px 0px 50px;
+}
+
+@media (max-width: 952px) {
+  .logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+} 
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:lightgrey;
+    top: 80px;
+    left: -200%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: #DFD6A7;
+    /* color: #DFD6A7; */
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/* ESTA PARTE DE ACA NO LA HICE NI LA PENSE YO.... SOY UNA BASURA */
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #AF9B46;
+  padding: 20px;
+}
